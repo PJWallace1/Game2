@@ -1,5 +1,11 @@
 {
   "resources": [
+    {"id":{"name":"macros","path":"scripts/macros/macros.yy",},"order":0,},
+    {"id":{"name":"Spr_Static","path":"sprites/Spr_Static/Spr_Static.yy",},"order":0,},
+    {"id":{"name":"Obj_Render","path":"objects/Obj_Render/Obj_Render.yy",},"order":0,},
+    {"id":{"name":"Tile_Tiles","path":"tilesets/Tile_Tiles/Tile_Tiles.yy",},"order":0,},
+    {"id":{"name":"TileScreenFunctions","path":"scripts/TileScreenFunctions/TileScreenFunctions.yy",},"order":1,},
+    {"id":{"name":"Spr_Tiles","path":"sprites/Spr_Tiles/Spr_Tiles.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
