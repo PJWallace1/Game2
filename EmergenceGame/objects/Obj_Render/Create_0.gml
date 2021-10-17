@@ -13,7 +13,11 @@ for(var tX = 0; tX < MAP_W; tX++){
 		tileMapData = tile_get_index(tileMapData); //Pull index from data
 		var thisTile = [-1, 0]; //[sprite index, height]
 		thisTile[TILE.SPRITE] = tileMapData; //store sprite index
-		thisTile[TILE.Z] = 0; //set tile height to 0 for now
+		if(thisTile[TILE.SPRITE] = 2){
+			thisTile[TILE.Z] = 2; //set water height to slightly lower
+		} else {
+			thisTile[TILE.Z] = 0; //set tile height to 0 as default
+		}
 		global.theMap[# tX, tY] = thisTile; //Store tile data in map
 	}
 }
