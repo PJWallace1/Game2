@@ -13,10 +13,6 @@ for(var tX = 0; tX < MAP_W; tX++){
 		tileIndex = tileData[TILE.SPRITE];
 		tileZ = tileData[TILE.Z];
 		
-		if(ScreenToTileX(mouse_x, mouse_y) == tX && ScreenToTileY(mouse_x, mouse_y) == tY){
-			tileIndex = 2;
-			tileZ += 2;
-		}
 		
 		if(tileIndex != 0){ //draw tile on screen if it exists
 			draw_sprite(Spr_Static, tileIndex - 1, screenX, screenY + tileZ);
