@@ -1,9 +1,11 @@
-#macro MAP_W 32
-#macro MAP_H 24
-#macro TILE_W 16
-#macro TILE_H 8
-#macro ROOM_W 512
-#macro ROOM_H 384
+#macro MAP_W 64
+#macro MAP_H 48
+#macro TILE_W 64
+#macro TILE_H 32
+#macro ROOM_W 1024
+#macro ROOM_H 768
+#macro CAMERA_W 1024
+#macro CAMERA_H 768
 
 enum TILE
 {

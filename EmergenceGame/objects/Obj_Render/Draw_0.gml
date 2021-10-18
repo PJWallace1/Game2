@@ -18,7 +18,7 @@ for(var tX = 0; tX < MAP_W; tX++){
 			tileZ += 2;
 		}
 		
-		if(tileIndex != 0){ //draw on screen if not empty
+		if(tileIndex != 0){ //draw tile on screen if it exists
 			draw_sprite(Spr_Static, tileIndex - 1, screenX, screenY + tileZ);
 		}
 	}
