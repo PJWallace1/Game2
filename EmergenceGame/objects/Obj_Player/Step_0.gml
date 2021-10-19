@@ -9,12 +9,18 @@ var hsp = (keyboard_check(ord("D")) - keyboard_check(ord("A"))) / TILE_W * pixel
 
 //Apply movement to position
 if(vsp * hsp == 0){ //cardinal directions
-	playerX += vsp + hsp;
-	playerY += vsp - hsp;
+	var tileData = global.collisionMap[# floor(playerX + vsp + hsp), floor(playerY + vsp - hsp)];
+	if(tileData[TILE.SPRITE] != 1){
+		playerX += vsp + hsp;
+		playerY += vsp - hsp;
+	}
 } else { //diagonal motion
 	var tMul = sqrt(2) / 2.0;
-	playerX += vsp * tMul + hsp * tMul;
-	playerY += vsp * tMul - hsp * tMul;
+	var tileData = global.collisionMap[# floor(playerX + tMul * (vsp + hsp)), floor(playerY + tMul * (vsp - hsp))];
+	if(tileData[TILE.SPRITE] != 1){
+		playerX += tMul * (vsp + hsp);
+		playerY += tMul * (vsp - hsp);
+	}
 }
 
 //Convert new normal position to isometric position
