@@ -1,5 +1,8 @@
 /// @description Setup Game
 
+//Create Transition object
+instance_create_layer(0, 0, "Instances", Obj_Transition);
+
 //Map Creation
 layer_set_visible("Map", false); //Hides bitmap
 
