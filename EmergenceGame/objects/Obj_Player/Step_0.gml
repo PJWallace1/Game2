@@ -27,6 +27,7 @@ if(!global.paused){
 		}
 	}
 
+<<<<<<< HEAD
 	//Convert new normal position to isometric position
 	var newX = TileToScreenX(global.playerX, global.playerY) - CAMERA_W * 0.5;
 	var newY = TileToScreenY(global.playerX, global.playerY) - CAMERA_H * 0.5;
@@ -36,3 +37,7 @@ if(!global.paused){
 } else {
 	
 }
+=======
+//Move camera to new position
+camera_set_view_pos(view_camera[0], newX, newY);
+>>>>>>> parent of 488f672 (Fish Game)

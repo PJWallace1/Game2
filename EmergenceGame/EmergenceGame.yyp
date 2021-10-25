@@ -20,7 +20,10 @@
     {"id":{"name":"Tile_Collision","path":"tilesets/Tile_Collision/Tile_Collision.yy",},"order":1,},
     {"id":{"name":"Room_Credits","path":"rooms/Room_Credits/Room_Credits.yy",},"order":3,},
     {"id":{"name":"Tile_Tiles","path":"tilesets/Tile_Tiles/Tile_Tiles.yy",},"order":0,},
+<<<<<<< HEAD
     {"id":{"name":"Obj_PauseMenu","path":"objects/Obj_PauseMenu/Obj_PauseMenu.yy",},"order":7,},
+=======
+>>>>>>> parent of 488f672 (Fish Game)
     {"id":{"name":"TileScreenFunctions","path":"scripts/TileScreenFunctions/TileScreenFunctions.yy",},"order":1,},
     {"id":{"name":"Spr_Tiles","path":"sprites/Spr_Tiles/Spr_Tiles.yy",},"order":1,},
     {"id":{"name":"Spr_Collision","path":"sprites/Spr_Collision/Spr_Collision.yy",},"order":4,},
