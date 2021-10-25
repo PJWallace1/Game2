@@ -1,9 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-/// @description Insert description here
-// You can write your code in this editor
-
 //connect rope to hook
 instance_destroy(Obj_Rope);
 with (instance_create_layer(x-15, y-40, "Instances", Obj_Rope)){
