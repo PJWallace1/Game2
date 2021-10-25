@@ -29,3 +29,9 @@ var newY = TileToScreenY(playerX, playerY) - CAMERA_H * 0.5;
 
 //Move camera to new position
 camera_set_view_pos(view_camera[0], newX, newY);
+
+//Check if game transition
+//left click on water tile to go to fishing
+if (mouse_check_button(mb_left)){
+	SlideTransition(TRANS_MODE.GOTO, Room_Fishing);
+}
