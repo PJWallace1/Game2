@@ -41,6 +41,7 @@ if(menu_committed != -1){
 		case 0: 
 			global.paused = true;
 			SlideTransition(TRANS_MODE.GOTO, Room_Menu);
+			instance_destroy();
 			break;
 	}
 }
