@@ -29,7 +29,7 @@ if(menu_control){
 				break;
 		}
 		menu[2] = "Load";
-		menu[1] = "New";
+		menu[1] = "Overwrite";
 		menu[0] = "Back";
 		menu_cursor = 2;
 		first_menu = false;
@@ -53,13 +53,10 @@ if(menu_control){
 				}
 			case 1: //Create a new game
 				menu_control = false;
-				global.playerX = 30;
-				global.playerY = 16;
 				SlideTransition(TRANS_MODE.GOTO, Room1);
 				break;
 			case 0: //return to choosing a save
 				first_menu = true
-				menu_cursor = 2;
 				menu[2] = "Save 1";
 				menu[1] = "Save 2";
 				menu[0] = "Save 3";
