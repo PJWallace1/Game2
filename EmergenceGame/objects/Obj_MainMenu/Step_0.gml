@@ -23,11 +23,13 @@ if(menu_control){
 if(menu_committed != -1){
 	switch(menu_committed){
 		case 2: 
-			SlideTransition(TRANS_MODE.GOTO, Room1);
+			SlideTransition(TRANS_MODE.GOTO, Room_ChooseSave);
 		break;
 		case 1:
 			SlideTransition(TRANS_MODE.GOTO, Room_Credits);
 			break;
-		case 0: game_end(); break;
+		case 0: 
+			game_end(); 
+			break;
 	}
 }
