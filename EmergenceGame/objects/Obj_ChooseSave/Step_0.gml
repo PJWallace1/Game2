@@ -28,14 +28,14 @@ if(menu_control){
 				global.chosen_save = "default";
 				break;
 		}
-		menu[2] = "Load";
-		menu[1] = "New";
+		menu[2] = "New";
+		menu[1] = "Load";
 		menu[0] = "Back";
 		menu_cursor = 2;
 		first_menu = false;
 	} else if(keyboard_check_released(vk_enter) && !first_menu){
 		switch (menu_cursor){
-			case 2: //Load the old save if it exists
+			case 1: //Load the old save if it exists
 				menu_control = false;
 				if(file_exists(global.chosen_save)){
 					var file = file_text_open_read(global.chosen_save);
@@ -51,7 +51,7 @@ if(menu_control){
 					SlideTransition(TRANS_MODE.GOTO, target_room);
 					break;
 				}
-			case 1: //Create a new game
+			case 2: //Create a new game
 				menu_control = false;
 				global.playerX = 30;
 				global.playerY = 16;
