@@ -22,7 +22,8 @@ if(room_get_name(room) == "Room_Menu"){
 			tileMapData = tile_get_index(tileMapData); //Pull index from data
 			var thisTile = [-1, 0]; //[sprite index, height]
 			thisTile[TILE.SPRITE] = tileMapData; //store sprite index
-			if(thisTile[TILE.SPRITE] = 2){
+			if(thisTile[TILE.SPRITE] == 2 || thisTile[TILE.SPRITE] == 3 ||
+			   thisTile[TILE.SPRITE] == 4){
 				thisTile[TILE.Z] = 2; //set water height to slightly lower
 			} else {
 				thisTile[TILE.Z] = 0; //set tile height to 0 as default
