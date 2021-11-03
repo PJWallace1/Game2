@@ -38,7 +38,6 @@
     {"id":{"name":"Obj_PauseMenu","path":"objects/Obj_PauseMenu/Obj_PauseMenu.yy",},"order":7,},
     {"id":{"name":"TileScreenFunctions","path":"scripts/TileScreenFunctions/TileScreenFunctions.yy",},"order":1,},
     {"id":{"name":"Spr_Tiles","path":"sprites/Spr_Tiles/Spr_Tiles.yy",},"order":1,},
-    {"id":{"name":"Spr_Ice_Tiles","path":"sprites/Spr_Ice_Tiles/Spr_Ice_Tiles.yy",},"order":11,},
     {"id":{"name":"Obj_Interact","path":"objects/Obj_Interact/Obj_Interact.yy",},"order":14,},
     {"id":{"name":"Spr_Collision","path":"sprites/Spr_Collision/Spr_Collision.yy",},"order":4,},
     {"id":{"name":"Obj_MainMenu","path":"objects/Obj_MainMenu/Obj_MainMenu.yy",},"order":5,},
