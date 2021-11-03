@@ -1,14 +1,13 @@
 /// @description Move player
 //Pause the game if the player presses escape
-if(keyboard_check(vk_escape)){
-	global.paused = true;
+if(!global.paused && keyboard_check_pressed(vk_escape)){
 	instance_create_layer(0, 0, "Instances", Obj_PauseMenu);
 }
-if(!global.paused){
+else if(!global.paused){
 	//Camera Movement
-	//Move _ pixels in vertical direction
+	//Move pixelsToMove pixels in vertical direction
 	var vsp = (keyboard_check(ord("S")) - keyboard_check(ord("W"))) / TILE_H * pixelsToMove; 
-	//Move _ pixels in horizontal direction
+	//Move pixelsToMove pixels in horizontal direction
 	var hsp = (keyboard_check(ord("D")) - keyboard_check(ord("A"))) / TILE_W * pixelsToMove;
 
 	//Apply movement to position
@@ -33,6 +32,4 @@ if(!global.paused){
 
 	//Move camera to new position
 	camera_set_view_pos(view_camera[0], newX, newY);
-} else {
-	
 }
