@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Spr_Ice_Tiles",
-    "path": "sprites/Spr_Ice_Tiles/Spr_Ice_Tiles.yy",
+    "name": "Spr_Tiles2",
+    "path": "sprites/Spr_Tiles2/Spr_Tiles2.yy",
   },
   "tileWidth": 16,
   "tileHeight": 16,
@@ -17,7 +17,7 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "out_columns": 2,
-  "tile_count": 5,
+  "tile_count": 6,
   "autoTileSets": [],
   "tileAnimationFrames": [],
   "tileAnimationSpeed": 15.0,
@@ -28,6 +28,7 @@
       2,
       3,
       4,
+      5,
     ],
     "SerialiseFrameCount": 1,
   },

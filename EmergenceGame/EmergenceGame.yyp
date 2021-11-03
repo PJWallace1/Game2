@@ -21,6 +21,7 @@
     {"id":{"name":"Font_Interact","path":"fonts/Font_Interact/Font_Interact.yy",},"order":2,},
     {"id":{"name":"Font_Menu","path":"fonts/Font_Menu/Font_Menu.yy",},"order":0,},
     {"id":{"name":"Obj_ChooseSave","path":"objects/Obj_ChooseSave/Obj_ChooseSave.yy",},"order":6,},
+    {"id":{"name":"Spr_Tiles2","path":"sprites/Spr_Tiles2/Spr_Tiles2.yy",},"order":12,},
     {"id":{"name":"Obj_Hook","path":"objects/Obj_Hook/Obj_Hook.yy",},"order":2,},
     {"id":{"name":"Spr_Center","path":"sprites/Spr_Center/Spr_Center.yy",},"order":3,},
     {"id":{"name":"Obj_Rope","path":"objects/Obj_Rope/Obj_Rope.yy",},"order":1,},
