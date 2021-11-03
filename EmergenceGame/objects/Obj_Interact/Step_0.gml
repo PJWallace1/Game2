@@ -25,4 +25,8 @@ if(!global.paused){
 		global.paused = true;
 		SlideTransition(TRANS_MODE.GOTO, Room_Fishing);
 	}
+	
+	if (keyboard_check(ord("I"))){
+		SlideTransition(TRANS_MODE.GOTO, Room_Arctic);
+	}
 }
