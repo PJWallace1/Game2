@@ -52,7 +52,7 @@ if(room_get_name(room) == "Room_Menu"){
 	instance_create_layer(0, 0, "Instances", Obj_Interact);
 	var tileMapM = layer_tilemap_get_id("Map"); //Get tilemap id
 	var tileMapC = layer_tilemap_get_id("Collision"); //Get tilemap id
-	var tileMapA = layer_tilemap_get_id("AboveGround"); //Get tilemap id
+	//var tileMapA = layer_tilemap_get_id("AboveGround"); //Get tilemap id
 
 	layer_set_visible("Map", false); //Hides bitmap
 	layer_set_visible("Collision", false); //Hides bitmap
