@@ -29,4 +29,7 @@ if(!global.paused){
 	if (keyboard_check(ord("I"))){
 		SlideTransition(TRANS_MODE.GOTO, Room_Arctic);
 	}
+	if (keyboard_check(ord("T"))){
+		SlideTransition(TRANS_MODE.GOTO, Room_Tropical);
+	}
 }

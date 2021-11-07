@@ -48,6 +48,7 @@
     {"id":{"name":"Tile_Tiles","path":"tilesets/Tile_Tiles/Tile_Tiles.yy",},"order":0,},
     {"id":{"name":"Obj_PauseMenu","path":"objects/Obj_PauseMenu/Obj_PauseMenu.yy",},"order":7,},
     {"id":{"name":"TileScreenFunctions","path":"scripts/TileScreenFunctions/TileScreenFunctions.yy",},"order":1,},
+    {"id":{"name":"Room_Tropical","path":"rooms/Room_Tropical/Room_Tropical.yy",},"order":7,},
     {"id":{"name":"Spr_Tiles","path":"sprites/Spr_Tiles/Spr_Tiles.yy",},"order":1,},
     {"id":{"name":"Obj_Interact","path":"objects/Obj_Interact/Obj_Interact.yy",},"order":14,},
     {"id":{"name":"Spr_Collision","path":"sprites/Spr_Collision/Spr_Collision.yy",},"order":4,},
@@ -74,6 +75,7 @@
     {"roomId":{"name":"Room_Credits","path":"rooms/Room_Credits/Room_Credits.yy",},},
     {"roomId":{"name":"Room_Fishing","path":"rooms/Room_Fishing/Room_Fishing.yy",},},
     {"roomId":{"name":"Room_Arctic","path":"rooms/Room_Arctic/Room_Arctic.yy",},},
+    {"roomId":{"name":"Room_Tropical","path":"rooms/Room_Tropical/Room_Tropical.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -100,7 +102,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.3.574",
+    "IDEVersion": "2.3.4.580",
   },
   "resourceVersion": "1.4",
   "name": "EmergenceGame",
