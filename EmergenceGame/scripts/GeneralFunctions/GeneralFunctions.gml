@@ -48,3 +48,25 @@ function LoadSaveFile(){
 	}
 	file_text_close(file);
 }
+
+/// @function          SaveGame()
+function SaveGame(){
+	var file = file_text_open_write(global.chosen_save);
+	file_text_write_real(file, global.playerX);
+	file_text_writeln(file);
+	file_text_write_real(file, global.playerY);
+	file_text_writeln(file);
+	
+	for(var i = 0; i < array_length(global.mapNames); i++){
+		var tileMapID = global.gridNames[i];
+		file_text_writeln(file);
+		for(var y_ = 0; y_ < MAP_H; y_++){
+			for(var x_ = 0; x_ < MAP_W; x_++){
+				file_text_write_real(file, tileMapID[# x_, y_]);
+				file_text_write_string(file, " ");
+			}
+			file_text_writeln(file);
+		}
+	}
+	file_text_close(file);
+}

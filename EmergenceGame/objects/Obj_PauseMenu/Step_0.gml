@@ -25,17 +25,7 @@ if(menu_control){
 if(menu_committed != -1){
 	switch(menu_committed){
 		case 2: 
-			if(file_exists(global.chosen_save)){
-				file_delete(global.chosen_save);
-			}
-			var file = file_text_open_write(global.chosen_save);
-			file_text_write_real(file, room);
-			file_text_writeln(file);
-			file_text_write_real(file, global.playerX);
-			file_text_writeln(file);
-			file_text_write_real(file, global.playerY);
-			file_text_writeln(file);
-			file_text_close(file);
+			SaveGame();
 			menu_control = true;
 			menu_committed = -1;
 		break;

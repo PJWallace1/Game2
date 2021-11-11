@@ -38,9 +38,8 @@ if(menu_control){
 			case 1: //Load the old save if it exists
 				menu_control = false;
 				if(file_exists(global.chosen_save)){
-					
-					LoadSaveFile(); //located in GeneralFunctions
-					
+					menu_control = false;
+					new_game = false;
 					break;
 				}
 			case 2: //Create a new game
