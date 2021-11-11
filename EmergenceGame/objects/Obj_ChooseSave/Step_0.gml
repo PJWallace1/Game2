@@ -45,7 +45,7 @@ if(menu_control){
 				}
 			case 2: //Create a new game
 				menu_control = false;
-				new_game = false;
+				new_game = true;
 				room_goto(Room_Tropical);
 				break;
 			case 0: //return to choosing a save
@@ -60,7 +60,6 @@ if(menu_control){
 } else {
 	if(new_game){ //Loads a save file
 		GenerateNewSave();
-		LoadSaveFile();
 	}
 	LoadSaveFile();
 	SlideTransition(TRANS_MODE.GOTO, Room_Game);
