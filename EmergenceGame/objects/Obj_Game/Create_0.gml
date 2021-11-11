@@ -23,5 +23,7 @@ global.Collision_Grid = ds_grid_create(MAP_W, MAP_H);
 global.Temperature_Grid = ds_grid_create(MAP_W, MAP_H);
 
 //A list of all the grids in order of depth
-global.gridNames = ["Temperature_Grid", "Collision_Grid", "Foreground_Grid", 
-					"Interactable_Grid","Background_Grid", "Ground_Grid"]
+global.mapNames = ["Foreground_Grid", "Interactable_Grid","Background_Grid",
+					"Ground_Grid", "Temperature_Grid", "Collision_Grid"]
+global.gridNames = [global.Foreground_Grid, global.Interactable_Grid, global.Background_Grid,
+			        global.Ground_Grid, global.Temperature_Grid, global.Collision_Grid];

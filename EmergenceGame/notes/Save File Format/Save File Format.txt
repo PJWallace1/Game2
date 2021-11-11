@@ -1,8 +1,8 @@
 C:\Users\garde\AppData\Local\EmergenceGame
 
-room id 
 player x position
 player y position
+//Current Saves
 ground				//MAP_W by MAP_H grid
 background		    //MAP_W by MAP_H grid
 interactable		//MAP_W by MAP_H grid

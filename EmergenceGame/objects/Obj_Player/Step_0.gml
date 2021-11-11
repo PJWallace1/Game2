@@ -12,15 +12,15 @@ else if(!global.paused){
 
 	//Apply movement to position
 	if(vsp * hsp == 0){ //cardinal directions
-		var tileData = global.collisionMap[# floor(global.playerX + vsp + hsp), floor(global.playerY + vsp - hsp)];
-		if(tileData[TILE.SPRITE] != 1){
+		var tileData = global.Collision_Grid[# floor(global.playerX + vsp + hsp), floor(global.playerY + vsp - hsp)];
+		if(tileData != 1){
 			global.playerX += vsp + hsp;
 			global.playerY += vsp - hsp;
 		}
 	} else { //diagonal motion
 		var tMul = sqrt(2) / 2.0;
-		var tileData = global.collisionMap[# floor(global.playerX + tMul * (vsp + hsp)), floor(global.playerY + tMul * (vsp - hsp))];
-		if(tileData[TILE.SPRITE] != 1){
+		var tileData = global.Collision_Grid[# floor(global.playerX + tMul * (vsp + hsp)), floor(global.playerY + tMul * (vsp - hsp))];
+		if(tileData != 1){
 			global.playerX += tMul * (vsp + hsp);
 			global.playerY += tMul * (vsp - hsp);
 		}

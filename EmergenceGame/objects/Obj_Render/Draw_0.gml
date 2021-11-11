@@ -1,43 +1,23 @@
 /// @description Render game
 //Temp variables
-var tileData, screenX, screenY, tileIndex, tileZ;
-
-//Draw map
-for(var tX = 0; tX < MAP_W; tX++){
-	for(var tY = 0; tY < MAP_H; tY++){
-		tileData = global.theMap[# tX, tY]; //Get tile data from map cell
-		
-		//convert to isometric coordinates
-		screenX = TileToScreenX(tX, tY);
-		screenY = TileToScreenY(tX, tY);
-		
-		//Extract tile cell data
-		tileIndex = tileData[TILE.SPRITE];
-		tileZ = tileData[TILE.Z];
-		
-		
-		if(tileIndex != 0){ //draw tile on screen if it exists
-			draw_sprite(Spr_IsoTiles, tileIndex - 1, screenX, screenY + tileZ);
-		}
-	}
-}
-
-//Draw above ground items
-if (room_get_name(room) == "Room_Forest"){
+var screenX, screenY, tileIndex;
+var gridsToDraw = 4 //The number of grids obj_render loops through
+//Sprite IDs for each layer
+var gridSprites = [Spr_ForegroundIso, Spr_InteractableIso,
+				   Spr_BackgroundIso, Spr_GroundIso];
+for(var r = gridsToDraw - 1; r >= 0; r--){ //Draw layers from back to front
+	var curGrid = global.gridNames[r];
 	for(var tX = 0; tX < MAP_W; tX++){
 		for(var tY = 0; tY < MAP_H; tY++){
-			tileData = global.aboveGroundMap[# tX, tY]; //Get tile data from map cell
+			tileIndex = curGrid[# tX, tY]; //Get tile data from map cell
+		
 			//convert to isometric coordinates
 			screenX = TileToScreenX(tX, tY);
-			screenY = TileToScreenY(tX, tY);
-		
-			//Extract tile cell data
-			tileIndex = tileData[TILE.SPRITE];
-			tileZ = tileData[TILE.Z];
-		
-		
+			screenY = TileToScreenY(tX, tY);	
+			
+			//if(curGrid == global.Interactable_Grid && 
 			if(tileIndex != 0){ //draw tile on screen if it exists
-				draw_sprite(Spr_IsoAboveGround, tileIndex - 1, screenX, screenY + tileZ);
+				draw_sprite(gridSprites[r], tileIndex - 1, screenX, screenY);
 			}
 		}
 	}

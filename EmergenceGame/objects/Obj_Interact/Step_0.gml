@@ -3,8 +3,8 @@ if(!global.paused){
 	var tileData, keepSearching = true;
 	for(var tX = -1; tX <= 1 && keepSearching; tX++){
 		for(var tY = -1; tY <= 1 && keepSearching; tY++){
-			tileData = global.aboveGroundMap[# floor(global.playerX) +  tX, floor(global.playerY) + tY];
-			if (tileData[TILE.SPRITE] == 4){
+			tileData = global.Interactable_Grid[# floor(global.playerX) +  tX, floor(global.playerY) + tY];
+			if (tileData == 4){
 			//if(tileData == Tile_AboveGround && tileData[TILE.SPRITE] == 4){
 				interact = true;
 				interactX = floor(global.playerX) + tX;

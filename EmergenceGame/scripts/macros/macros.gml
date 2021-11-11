@@ -6,6 +6,8 @@
 #macro ROOM_H 768
 #macro CAMERA_W 1024
 #macro CAMERA_H 768
+#macro DEFAULT_X 60
+#macro DEFAULT_Y 16
 
 //Used to give meanginful labels to indices of array
 enum TILE

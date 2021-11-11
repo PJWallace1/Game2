@@ -10,6 +10,7 @@ menu_font = Font_Menu;
 menu_itemheight = font_get_size(menu_font);
 first_menu = true;
 menu_control = true;
+new_game = false;
 
 menu[2] = "Save 1";
 menu[1] = "Save 2";
