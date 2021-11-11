@@ -4,7 +4,8 @@ if(!global.paused){
 	for(var tX = -1; tX <= 1 && keepSearching; tX++){
 		for(var tY = -1; tY <= 1 && keepSearching; tY++){
 			tileData = global.aboveGroundMap[# floor(global.playerX) +  tX, floor(global.playerY) + tY];
-			if(tileData == Tile_AboveGround && tileData[TILE.SPRITE] == 4){
+			if (tileData[TILE.SPRITE] == 4){
+			//if(tileData == Tile_AboveGround && tileData[TILE.SPRITE] == 4){
 				interact = true;
 				interactX = floor(global.playerX) + tX;
 				interactY = floor(global.playerY) + tY;
