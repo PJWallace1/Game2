@@ -7,7 +7,8 @@
 #macro CAMERA_W 1024
 #macro CAMERA_H 768
 
+//Used to give meanginful labels to indices of array
 enum TILE
 {
-	SPRITE = 0, Z = 1
+	SPRITE = 0
 }

@@ -33,3 +33,10 @@ else if(!global.paused){
 	//Move camera to new position
 	camera_set_view_pos(view_camera[0], newX, newY);
 }
+//Temporary Room Change Accesability
+if (keyboard_check(ord("I"))){
+	SlideTransition(TRANS_MODE.GOTO, Room_Arctic);
+}
+if (keyboard_check(ord("T"))){
+	SlideTransition(TRANS_MODE.GOTO, Room_Tropical);
+}

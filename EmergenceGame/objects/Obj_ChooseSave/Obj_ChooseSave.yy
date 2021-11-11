@@ -25,8 +25,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Room Controls",
+    "path": "folders/Objects/Room Controls.yy",
   },
   "resourceVersion": "1.0",
   "name": "Obj_ChooseSave",

@@ -25,8 +25,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "GUIs",
+    "path": "folders/Objects/GUIs.yy",
   },
   "resourceVersion": "1.0",
   "name": "Obj_PauseMenu",

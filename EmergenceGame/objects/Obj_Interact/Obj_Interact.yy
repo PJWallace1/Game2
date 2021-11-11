@@ -25,8 +25,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Player Managers",
+    "path": "folders/Objects/Player Managers.yy",
   },
   "resourceVersion": "1.0",
   "name": "Obj_Interact",

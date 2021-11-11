@@ -1,4 +1,4 @@
-/// @description Insert description here
+ /// @description Insert description here
 // You can write your code in this editor
 
 //Keyboard Controls
@@ -25,7 +25,7 @@ if(menu_control){
 				global.chosen_save = "Save3.sav";
 				break;
 			default:
-				global.chosen_save = "default";
+				throw ("Invalid save file...oops");
 				break;
 		}
 		menu[2] = "New";
@@ -40,7 +40,7 @@ if(menu_control){
 				if(file_exists(global.chosen_save)){
 					var file = file_text_open_read(global.chosen_save);
 					//Read info from save file
-					var target_room = file_text_read_real(file);
+					var target_room = file_text_read_string(file);
 					file_text_readln(file);
 					global.playerX = file_text_read_real(file);
 					file_text_readln(file);
@@ -48,14 +48,19 @@ if(menu_control){
 					file_text_readln(file);
 					file_text_close(file);
 					//Load saved room
-					SlideTransition(TRANS_MODE.GOTO, target_room);
+					SlideTransition(TRANS_MODE.GOTO, asset_get_index(target_room));
 					break;
 				}
 			case 2: //Create a new game
 				menu_control = false;
-				global.playerX = 30;
-				global.playerY = 16;
-				SlideTransition(TRANS_MODE.GOTO, Room1);
+				var file = file_text_open_write(global.chosen_save);
+				file_text_write_string(file, "Forest"); //Current Map Name
+				file_text_writeln(file);
+				file_text_write_real(file, 30);		    //PlayerX
+				file_text_writeln(file);
+				file_text_write_real(file, 16);		    //PlayerY
+				file_text_close(file);
+				instance_create_layer(0, 0, "Instances", Obj_LoadNewSave);
 				break;
 			case 0: //return to choosing a save
 				first_menu = true

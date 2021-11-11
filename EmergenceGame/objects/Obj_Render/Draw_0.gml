@@ -23,7 +23,7 @@ for(var tX = 0; tX < MAP_W; tX++){
 }
 
 //Draw above ground items
-if (room == Room1){
+if (room_get_name(room) == "Room_Forest"){
 	for(var tX = 0; tX < MAP_W; tX++){
 		for(var tY = 0; tY < MAP_H; tY++){
 			tileData = global.aboveGroundMap[# tX, tY]; //Get tile data from map cell

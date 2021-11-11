@@ -18,6 +18,3 @@ var _ypos = (_dheight / 2) - CAMERA_H / 2;
 window_set_rectangle(_xpos, _ypos, CAMERA_W, CAMERA_H);
 
 surface_resize(application_surface, CAMERA_W, CAMERA_H);
-
-
-/// test github 

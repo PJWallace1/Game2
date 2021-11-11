@@ -1,0 +1,11 @@
+C:\Users\garde\AppData\Local\EmergenceGame
+
+room id 
+player x position
+player y position
+ground				//MAP_W by MAP_H grid
+background		    //MAP_W by MAP_H grid
+interactable		//MAP_W by MAP_H grid
+foreground		    //MAP_W by MAP_H grid
+collision			//MAP_W by MAP_H grid
+temperature			//MAP_W by MAP_H grid
