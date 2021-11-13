@@ -8,9 +8,9 @@ menu_scale = 4;
 //menu_speed = 25; //lower is faster
 menu_font = Font_Menu;
 menu_itemheight = font_get_size(menu_font);
-first_menu = true;
-menu_control = true;
-new_game = false;
+//An integer used in the switch statement within
+//step to control which menu layer to step through
+menu_depth = 0;
 
 menu[2] = "Save 1";
 menu[1] = "Save 2";

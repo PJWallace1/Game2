@@ -23,7 +23,17 @@ if(!global.paused){
 	}
 	//Begin the fishing game is E is held for long enough
 	if(progress >= requiredProgress){
-		global.paused = true;
-		SlideTransition(TRANS_MODE.GOTO, Room_Fishing);
+		progress = 0; //Reset the progress bar upon completion
+		//Get the desired Obj_FishingInteractable
+		activatedFishingInteractable = ds_map_find_value(global.fishingInteractableMap, string(interactX) + " " + string(interactY));
+		if(!is_undefined(activatedFishingInteractable)){
+			//Activate the object
+			activatedFishingInteractable.activated = true;
+			global.paused = true;
+		} else {
+			show_debug_message("Failed to find specifed fishing interactable:");
+			show_debug_message("X: " + string(interactX) + " Y: " + string(interactY) + " TileID: " +
+						       string(global.Interactable_Grid[# interactX, interactY]));
+		}
 	}
 }

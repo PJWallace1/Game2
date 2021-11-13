@@ -18,3 +18,4 @@ for(var i = 0; i < menu_items; i++){
 	draw_set_color(col);
 	draw_text_transformed(xx, yy, txt, menu_scale, menu_scale, 0);
 }
+

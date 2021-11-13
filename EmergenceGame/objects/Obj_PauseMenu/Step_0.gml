@@ -3,7 +3,6 @@
 
 if(menu_control){
 	if(keyboard_check_pressed(vk_escape)){
-		show_debug_message("reached");
 		menu_committed = 1;
 		menu_control = false;
 	}
@@ -25,15 +24,16 @@ if(menu_control){
 if(menu_committed != -1){
 	switch(menu_committed){
 		case 2: 
-			SaveGame();
+			SaveGame(); //Located in General Functions
 			menu_control = true;
 			menu_committed = -1;
-		break;
+			break;
 		case 1:
 			global.paused = false;
-			instance_destroy(self);
+			instance_destroy();
 			break;
 		case 0: 
+			//Return to Menu
 			SlideTransition(TRANS_MODE.GOTO, Room_Menu);
 			instance_destroy();
 			break;

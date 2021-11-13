@@ -4,6 +4,7 @@
 global.chosen_save = "invalid";
 global.playerX = 30;
 global.playerY = 16;
+
 //The player object instance
 player = instance_create_layer(0, 0, "Instances", Obj_Player);
 
@@ -27,3 +28,8 @@ global.mapNames = ["Foreground_Grid", "Interactable_Grid","Background_Grid",
 					"Ground_Grid", "Temperature_Grid", "Collision_Grid"]
 global.gridNames = [global.Foreground_Grid, global.Interactable_Grid, global.Background_Grid,
 			        global.Ground_Grid, global.Temperature_Grid, global.Collision_Grid];
+					
+//A list of Obj_FishingIntercatables within the map
+global.fishingInteractableMap = ds_map_create();
+					
+randomize(); //Randomize seed
