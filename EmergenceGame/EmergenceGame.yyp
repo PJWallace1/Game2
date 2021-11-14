@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"Obj_Camera","path":"objects/Obj_Camera/Obj_Camera.yy",},"order":1,},
+    {"id":{"name":"Obj_Bob","path":"objects/Obj_Bob/Obj_Bob.yy",},"order":2,},
     {"id":{"name":"Tile_GroundTiles","path":"tilesets/Tile_GroundTiles/Tile_GroundTiles.yy",},"order":3,},
     {"id":{"name":"Room_Game","path":"rooms/Room_Game/Room_Game.yy",},"order":9,},
     {"id":{"name":"Tile_InteractableTiles","path":"tilesets/Tile_InteractableTiles/Tile_InteractableTiles.yy",},"order":2,},
@@ -34,10 +35,12 @@
     {"id":{"name":"Font_Interact","path":"fonts/Font_Interact/Font_Interact.yy",},"order":2,},
     {"id":{"name":"Font_Menu","path":"fonts/Font_Menu/Font_Menu.yy",},"order":0,},
     {"id":{"name":"Obj_ChooseSave","path":"objects/Obj_ChooseSave/Obj_ChooseSave.yy",},"order":0,},
+    {"id":{"name":"Spr_BaitMenuIcon","path":"sprites/Spr_BaitMenuIcon/Spr_BaitMenuIcon.yy",},"order":29,},
     {"id":{"name":"Spr_GroundTiles","path":"sprites/Spr_GroundTiles/Spr_GroundTiles.yy",},"order":0,},
     {"id":{"name":"Spr_ForegroundTiles","path":"sprites/Spr_ForegroundTiles/Spr_ForegroundTiles.yy",},"order":6,},
     {"id":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},"order":0,},
     {"id":{"name":"Spr_Redshirt","path":"sprites/Spr_Redshirt/Spr_Redshirt.yy",},"order":3,},
+    {"id":{"name":"Obj_BaitMenu","path":"objects/Obj_BaitMenu/Obj_BaitMenu.yy",},"order":3,},
     {"id":{"name":"Spr_Bluesweatshirt","path":"sprites/Spr_Bluesweatshirt/Spr_Bluesweatshirt.yy",},"order":0,},
     {"id":{"name":"SlideTransition","path":"scripts/SlideTransition/SlideTransition.yy",},"order":2,},
     {"id":{"name":"Spr_InteractableIso","path":"sprites/Spr_InteractableIso/Spr_InteractableIso.yy",},"order":0,},

@@ -25,3 +25,9 @@ for(var i = 0; i < maxNumFish; i++){
 	curNumFish++;
 }
 
+//GUI Variables
+gui_margin = 40;
+bait_menu = instance_create_layer(CAMERA_W - gui_margin,
+								  gui_margin, "Fish", Obj_BaitMenu);
+bait_menu_open = false;
+
