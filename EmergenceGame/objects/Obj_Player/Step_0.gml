@@ -35,8 +35,10 @@ else if(!global.paused){
 }
 //Temporary Room Change Accesability
 if (keyboard_check(ord("I"))){
-	SlideTransition(TRANS_MODE.GOTO, Room_Arctic);
+	GenerateNewSave(Room_Arctic);
+	room_restart(); //Triggers load save
 }
 if (keyboard_check(ord("T"))){
-	SlideTransition(TRANS_MODE.GOTO, Room_Tropical);
+	GenerateNewSave(Room_Forest);
+	room_restart(); //Triggers load save
 }

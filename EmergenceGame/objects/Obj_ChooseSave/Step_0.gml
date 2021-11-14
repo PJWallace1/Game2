@@ -51,14 +51,12 @@ switch(menu_depth){
 			switch (menu_cursor){
 				case 1: //Load the old save if it exists
 					if(file_exists(global.chosen_save)){
-						menu_depth = 3;
-						new_game = false;
+						menu_depth = 2;
 						break;
 					}
 				case 2: //Create a new game
+					GenerateNewSave(Room_Tropical);
 					menu_depth = 2;
-					new_game = true;
-					room_goto(Room_Tropical);
 					break;
 				case 0: //return to choosing a save
 					menu_depth = 0;
@@ -71,9 +69,6 @@ switch(menu_depth){
 		}
 		break;
 	case 2:
-		//Creates a new save file
-		GenerateNewSave();
-	case 3:
 		//Save file loaded by Obj_Game at room start
 		SlideTransition(TRANS_MODE.GOTO, Room_Game);
 		instance_destroy();

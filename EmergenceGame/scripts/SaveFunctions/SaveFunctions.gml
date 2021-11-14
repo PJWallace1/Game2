@@ -1,5 +1,7 @@
-/// @function          GenerateNewSave()
-function GenerateNewSave(){
+/// @function          GenerateNewSave(roomID)
+/// @ param {real}	   roomID
+function GenerateNewSave(roomID){
+	layer_set_target_room(roomID);
 	var file = file_text_open_write(global.chosen_save);
 	file_text_write_real(file, 30);		    //PlayerX
 	file_text_writeln(file);				//go to next line
@@ -26,6 +28,7 @@ function GenerateNewSave(){
 		}
 	}
 	file_text_close(file);
+	layer_reset_target_room();
 }
 
 /// @function          LoadSaveFile()
