@@ -12,3 +12,6 @@ if(room_get_name(room) == "Room_Menu"){
 else if(room == Room_ChooseSave){
 	instance_create_layer(0, 0, "Instances", Obj_ChooseSave);
 }
+else if (room == Room_Tropical){
+	instance_create_layer(Obj_Player.x, Obj_Player.y, "Instances", Obj_Animals);
+}
