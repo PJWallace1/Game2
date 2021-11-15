@@ -6,7 +6,13 @@ enum SIZE{
 	MEDIUM,
 	LARGE
 }
-x = irandom(CAMERA_W - 1); //Screen pos
-y = irandom(CAMERA_H - 1); //Scren pos
-fishSize = 3;
-image_angle = irandom(364); //0 to 364 degrees
+activated = false;
+visible = false;
+direction = irandom(364); //0 to 364 degrees
+image_speed = 0;
+action = 0;
+
+//Control length of action
+goal = 100;
+counter = 0;
+

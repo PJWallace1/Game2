@@ -29,6 +29,18 @@ if(!global.paused){
 		if(!is_undefined(activatedFishingInteractable)){
 			//Activate the object
 			activatedFishingInteractable.activated = true;
+			with(activatedFishingInteractable){
+				for(var i = 0; i < curNumFish; i++)
+				{
+					with(fishInSpot[i])
+					{
+						activated = true;
+						visible = true;
+						x = camera_get_view_x(view_camera[0]) + irandom(CAMERA_W - (2 * other.fish_margin)) + other.fish_margin;
+						y = camera_get_view_y(view_camera[0]) + irandom(CAMERA_H - (2 * other.fish_margin)) + other.fish_margin;
+					}
+				}
+			}
 			global.paused = true;
 		} else {
 			show_debug_message("Failed to find specifed fishing interactable:");
