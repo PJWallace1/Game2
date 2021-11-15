@@ -36,4 +36,12 @@ if(!global.paused){
 						       string(global.Interactable_Grid[# interactX, interactY]));
 		}
 	}
+	//update bars
+	timer--;
+	if (timer < 0){
+		Obj_Player.h--;
+		Obj_Player.wl--;
+		Obj_Player.temp--;
+		timer = 500;
+	}
 }
