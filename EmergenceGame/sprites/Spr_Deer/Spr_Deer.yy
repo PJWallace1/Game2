@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Deer",
-    "path": "folders/Sprites/Animals/Deer.yy",
+    "name": "Old Animals",
+    "path": "folders/Sprites/Animals/Old Animals.yy",
   },
   "resourceVersion": "1.0",
   "name": "Spr_Deer",

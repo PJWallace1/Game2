@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Polar Bear",
-    "path": "folders/Sprites/Animals/Polar Bear.yy",
+    "name": "Old Animals",
+    "path": "folders/Sprites/Animals/Old Animals.yy",
   },
   "resourceVersion": "1.0",
   "name": "Spr_PolarBear",

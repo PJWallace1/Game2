@@ -25,11 +25,11 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"a7422702-63b6-4f9c-92de-a0de7a6a9483","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a7422702-63b6-4f9c-92de-a0de7a6a9483","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"LayerId":{"name":"04dfb3a5-686d-4c94-a3c0-2c43d84213bc","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"a7422702-63b6-4f9c-92de-a0de7a6a9483","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"LayerId":{"name":"d9b322f0-291e-4af2-a76b-f3077cf40fdc","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"a7422702-63b6-4f9c-92de-a0de7a6a9483","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"LayerId":{"name":"33aab6f2-e71e-4b6f-8a6f-ce2677e1d8ea","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"a7422702-63b6-4f9c-92de-a0de7a6a9483","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"LayerId":{"name":"658b5c6b-3dff-4f6c-ba93-a5fd5487588f","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"a7422702-63b6-4f9c-92de-a0de7a6a9483","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"LayerId":{"name":"37798105-8c2d-4dba-963c-f4ac728b934e","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"a7422702-63b6-4f9c-92de-a0de7a6a9483","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"LayerId":{"name":"658b5c6b-3dff-4f6c-ba93-a5fd5487588f","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"a7422702-63b6-4f9c-92de-a0de7a6a9483","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"LayerId":{"name":"33aab6f2-e71e-4b6f-8a6f-ce2677e1d8ea","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"a7422702-63b6-4f9c-92de-a0de7a6a9483","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"LayerId":{"name":"d9b322f0-291e-4af2-a76b-f3077cf40fdc","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"a7422702-63b6-4f9c-92de-a0de7a6a9483","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"LayerId":{"name":"04dfb3a5-686d-4c94-a3c0-2c43d84213bc","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"Spr_Deer_DR","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"resourceVersion":"1.0","name":"a7422702-63b6-4f9c-92de-a0de7a6a9483","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"b3f05215-ccd5-4eb6-b4b4-fe7ba5b78d39","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"b3f05215-ccd5-4eb6-b4b4-fe7ba5b78d39","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"LayerId":{"name":"37798105-8c2d-4dba-963c-f4ac728b934e","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
@@ -85,8 +85,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Deer",
-    "path": "folders/Sprites/Animals/Deer.yy",
+    "name": "Animals",
+    "path": "folders/Sprites/Animals.yy",
   },
   "resourceVersion": "1.0",
   "name": "Spr_Deer_DR",
