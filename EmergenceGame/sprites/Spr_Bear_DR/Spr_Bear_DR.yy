@@ -43,7 +43,7 @@
     "spriteId": {"name":"Spr_Bear_DR","path":"sprites/Spr_Bear_DR/Spr_Bear_DR.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 10.0,
+    "playbackSpeed": 5.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

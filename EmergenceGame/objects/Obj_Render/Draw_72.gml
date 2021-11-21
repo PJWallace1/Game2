@@ -3,4 +3,4 @@
 
 
 //draw animals
-instance_create_layer(x, y, "Instances", Obj_Animals);
+//instance_create_layer(x, y, "Instances", Obj_Animals);
