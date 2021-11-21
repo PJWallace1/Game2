@@ -2,8 +2,8 @@
 
 //Coordinates of player within map
 //The map tile in which the player resides
-x = 150;
-y = 100; //vertical tile
+x = 550;
+y = 500; //vertical tile
 
 //pixelsToMove = 3;
 
