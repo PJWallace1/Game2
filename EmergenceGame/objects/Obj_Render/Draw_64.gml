@@ -7,11 +7,11 @@ if (Obj_Player.hsp < 0){
 	if (Obj_Player.hsp > 0){
 		d = 1;
 	}
-	else if (Obj_Player.hsp == 0 && Obj_Player.vsp == 0){
+	if (Obj_Player.hsp == 0 && Obj_Player.vsp == 0){
 		i = 1;
 	}
 	else{
-		i += 25;
+		i += .25;
 	}
 
 //determine hat and draw player
@@ -54,3 +54,8 @@ draw_sprite(Spr_HealthBar_Border, 0, CAMERA_W * .02, CAMERA_H * .09);
 draw_sprite(Spr_HealthBar_bg, 0, CAMERA_W * .02, CAMERA_H * .16);
 draw_sprite_stretched(Spr_Temp, 0, CAMERA_W * .02, CAMERA_H * .16, (Obj_Player.temp/Obj_Player.temp_max)* Obj_Player.bar_width, Obj_Player.bar_height);
 draw_sprite(Spr_HealthBar_Border, 0, CAMERA_W * .02, CAMERA_H * .16);
+
+
+//draw animals
+draw_sprite_ext(Spr_Crab_DR, (i/ 1), animal_x, animal_y, animal_d, 1, 0, c_white, 1);
+//draw_sprite_ext(Spr_Crab_DR, (i/1), (animal_x + i), (animal_y + 2i), animal_d, 1, 0, c_white, 1);
