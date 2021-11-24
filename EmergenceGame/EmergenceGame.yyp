@@ -71,7 +71,6 @@
     {"id":{"name":"Room_Tropical","path":"rooms/Room_Tropical/Room_Tropical.yy",},"order":1,},
     {"id":{"name":"Spr_Center","path":"sprites/Spr_Center/Spr_Center.yy",},"order":10,},
     {"id":{"name":"Save File Format","path":"notes/Save File Format/Save File Format.yy",},"order":3,},
-    {"id":{"name":"Obj_Interact","path":"objects/Obj_Interact/Obj_Interact.yy",},"order":2,},
     {"id":{"name":"Spr_CollisionTiles","path":"sprites/Spr_CollisionTiles/Spr_CollisionTiles.yy",},"order":1,},
     {"id":{"name":"Obj_MainMenu","path":"objects/Obj_MainMenu/Obj_MainMenu.yy",},"order":1,},
     {"id":{"name":"Room_Forest","path":"rooms/Room_Forest/Room_Forest.yy",},"order":2,},

@@ -4,7 +4,7 @@ if(!global.paused && keyboard_check_pressed(vk_escape)){
 	instance_create_layer(0, 0, "Instances", Obj_PauseMenu);
 }
 else if(!global.paused){
-	//Camera Movement
+//Camera Movement
 	//Move pixelsToMove pixels in vertical direction
 	vsp = (keyboard_check(ord("S")) - keyboard_check(ord("W"))) / TILE_H * pixelsToMove; 
 	//Move pixelsToMove pixels in horizontal direction
@@ -32,6 +32,43 @@ else if(!global.paused){
 
 	//Move camera to new position
 	camera_set_view_pos(view_camera[0], newX, newY);
+	
+//Search for and handle nearby Interactable
+	var tileData, keepSearching = true;
+	for(var tX = -1; tX <= 1 && keepSearching; tX++){
+		for(var tY = -1; tY <= 1 && keepSearching; tY++){
+			tileData = global.Interactable_Grid[# floor(global.playerX) +  tX, floor(global.playerY) + tY];
+			if (tileData == 4){
+			//if(tileData == Tile_AboveGround && tileData[TILE.SPRITE] == 4){
+				interact = true;
+				interactX = floor(global.playerX) + tX;
+				interactY = floor(global.playerY) + tY;
+				keepSearching = false;
+			} else {
+				interact = false;
+			}
+		}
+	}
+	//Increase the progress bar if E is being held
+	if(interact && keyboard_check(ord("E"))){
+		progress+=0.75;
+	} else if(interact) {
+		progress = 0;
+	}
+	//Begin the fishing game if E is held for long enough
+	if(progress >= requiredProgress){
+		progress = 0; //Reset the progress bar upon completion
+		SaveGame();
+		room_goto(Room_Fishing);
+	}
+//update bars
+	timer--;
+	if (timer < 0){
+		Obj_Player.h--;
+		Obj_Player.wl--;
+		Obj_Player.temp--;
+		timer = 500;
+	}
 }
 //Temporary Room Change Accesability
 if (keyboard_check(ord("I"))){
