@@ -29,7 +29,4 @@ global.mapNames = ["Foreground_Grid", "Interactable_Grid","Background_Grid",
 global.gridNames = [global.Foreground_Grid, global.Interactable_Grid, global.Background_Grid,
 			        global.Ground_Grid, global.Temperature_Grid, global.Collision_Grid];
 					
-//A list of Obj_FishingIntercatables within the map
-global.fishingInteractableMap = ds_map_create();
-					
 randomize(); //Randomize seed

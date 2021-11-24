@@ -6,6 +6,8 @@ enum SIZE{
 	MEDIUM,
 	LARGE
 }
+fish_margin = 128;
+
 activated = false;
 visible = false;
 direction = irandom(364); //0 to 364 degrees

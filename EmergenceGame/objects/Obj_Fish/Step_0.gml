@@ -30,13 +30,13 @@ if(activated){
 				counter = 0;
 			}
 			break;
-		case 4:
-			direction = (direction + 180) % 360;
-			image_angle = point_direction(0, 0, hspeed, vspeed);
-			action = 0;
-			break;
 		case 5:
 			break;
 	}
+	//Keep fish within range
+	if(x < -1 * fish_margin) x += CAMERA_W;
+	if(x > CAMERA_W + fish_margin) x -= CAMERA_W;
+	if(y < -1 * fish_margin) y += CAMERA_H;
+	if(y > CAMERA_H + fish_margin) y -= CAMERA_H;
 }
 

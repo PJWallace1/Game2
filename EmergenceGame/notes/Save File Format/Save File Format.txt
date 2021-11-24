@@ -1,11 +1,20 @@
 C:\Users\garde\AppData\Local\EmergenceGame
 
-player x position
-player y position
+real(player x position)
+real(player y position)
 //Current Saves
 ground				//MAP_W by MAP_H grid
+
 background		    //MAP_W by MAP_H grid
+
 interactable		//MAP_W by MAP_H grid
+
 foreground		    //MAP_W by MAP_H grid
+
 collision			//MAP_W by MAP_H grid
+
 temperature			//MAP_W by MAP_H grid
+Fishing Data (String indicating location of data segment in file)
+real(number of fishing spots) //Number of unique fishing spots in the map
+real(gridX) real(gridY) real(maxNumFish) real(curNumFish) real(spawnChartID) //Data for a fishing spot
+real(x) real(y) real(size/image_index) real(direction) //Data for each fish

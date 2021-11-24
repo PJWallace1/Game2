@@ -18,6 +18,3 @@ menu[0] = "Quit";
 
 menu_items = array_length_1d(menu);
 menu_cursor = 2;
-
-//Clear structures for returning to main menu from game
-ds_map_clear(global.fishingInteractableMap);

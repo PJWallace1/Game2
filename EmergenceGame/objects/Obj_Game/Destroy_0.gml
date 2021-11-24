@@ -6,4 +6,4 @@ var numGrids = 6;
 for(var i = 0; i < numGrids; i++){
 	ds_grid_destroy(global.gridNames[i]);
 }
-ds_map_destroy(global.fishingInteractableMap);
+ds_map_destroy(global.fishingDataList);

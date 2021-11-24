@@ -49,6 +49,7 @@
     {"id":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},"order":0,},
     {"id":{"name":"Spr_Redshirt","path":"sprites/Spr_Redshirt/Spr_Redshirt.yy",},"order":3,},
     {"id":{"name":"Spr_HealthBar","path":"sprites/Spr_HealthBar/Spr_HealthBar.yy",},"order":0,},
+    {"id":{"name":"Room_Fishing","path":"rooms/Room_Fishing/Room_Fishing.yy",},"order":11,},
     {"id":{"name":"Spr_Baseball","path":"sprites/Spr_Baseball/Spr_Baseball.yy",},"order":16,},
     {"id":{"name":"Obj_BaitMenu","path":"objects/Obj_BaitMenu/Obj_BaitMenu.yy",},"order":3,},
     {"id":{"name":"Spr_Bluesweatshirt","path":"sprites/Spr_Bluesweatshirt/Spr_Bluesweatshirt.yy",},"order":0,},
@@ -57,7 +58,7 @@
     {"id":{"name":"Spr_InteractableIso","path":"sprites/Spr_InteractableIso/Spr_InteractableIso.yy",},"order":0,},
     {"id":{"name":"Tile_CollisionTiles","path":"tilesets/Tile_CollisionTiles/Tile_CollisionTiles.yy",},"order":1,},
     {"id":{"name":"Spr_Deer","path":"sprites/Spr_Deer/Spr_Deer.yy",},"order":0,},
-    {"id":{"name":"Obj_FishingInteractable","path":"objects/Obj_FishingInteractable/Obj_FishingInteractable.yy",},"order":0,},
+    {"id":{"name":"Obj_Fishing","path":"objects/Obj_Fishing/Obj_Fishing.yy",},"order":3,},
     {"id":{"name":"Spr_Cowboyhat","path":"sprites/Spr_Cowboyhat/Spr_Cowboyhat.yy",},"order":2,},
     {"id":{"name":"Obj_Fish","path":"objects/Obj_Fish/Obj_Fish.yy",},"order":1,},
     {"id":{"name":"Spr_Temp","path":"sprites/Spr_Temp/Spr_Temp.yy",},"order":3,},
@@ -97,6 +98,7 @@
     {"roomId":{"name":"Room_Credits","path":"rooms/Room_Credits/Room_Credits.yy",},},
     {"roomId":{"name":"Room_Game","path":"rooms/Room_Game/Room_Game.yy",},},
     {"roomId":{"name":"Room_ChooseHat","path":"rooms/Room_ChooseHat/Room_ChooseHat.yy",},},
+    {"roomId":{"name":"Room_Fishing","path":"rooms/Room_Fishing/Room_Fishing.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -133,7 +135,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.4.580",
+    "IDEVersion": "2.3.5.589",
   },
   "resourceVersion": "1.4",
   "name": "EmergenceGame",

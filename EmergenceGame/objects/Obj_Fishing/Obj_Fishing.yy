@@ -25,11 +25,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Fishing Objects",
-    "path": "folders/Objects/Fishing Objects.yy",
+    "name": "Room Controls",
+    "path": "folders/Objects/Room Controls.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Obj_FishingInteractable",
+  "name": "Obj_Fishing",
   "tags": [],
   "resourceType": "GMObject",
 }
