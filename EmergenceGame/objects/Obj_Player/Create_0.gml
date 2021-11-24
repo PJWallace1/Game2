@@ -23,5 +23,8 @@ wl_max = wl;
 temp = 50;
 temp_max = temp;
 
+var vsp = 0;
+var hsp = 0;
+
 
 

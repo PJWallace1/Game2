@@ -1,11 +1,44 @@
 /// @description Draw Player and Bars
 
+//determine player direction to change sprite direction
+if (Obj_Player.hsp < 0){
+		d = -1;
+	}
+	if (Obj_Player.hsp > 0){
+		d = 1;
+	}
+	else if (Obj_Player.hsp == 0 && Obj_Player.vsp == 0){
+		i = 1;
+	}
+	else{
+		i += 25;
+	}
+
+//determine hat and draw player
+if (global.hat == 2){
+	draw_sprite_ext(Spr_Cowboy, (i/ 1), CAMERA_W * 0.5, CAMERA_H * 0.5, d, 1, 0, c_white, 1);
+}
+else if (global.hat == 1){
+	draw_sprite_ext(Spr_Beanie, (i/ 1), CAMERA_W * 0.5, CAMERA_H * 0.5, d, 1, 0, c_white, 1);
+}
+else if (global.hat == 0){
+	draw_sprite_ext(Spr_Baseball, (i/ 1), CAMERA_W * 0.5, CAMERA_H * 0.5, d, 1, 0, c_white, 1);
+}
+
+
+if (i == 3){
+	i = 0;
+}
+
+//draw player
+
+/*
 if (room == Room_Forest || room == Room_Game){
-	draw_sprite(Spr_Center, 0, CAMERA_W * 0.5, CAMERA_H * 0.5);
+	draw_sprite(Spr_Cowboy, 0, CAMERA_W * 0.5, CAMERA_H * 0.5);
 }
 if (room == Room_Arctic || room == Room_Tropical){
-	draw_sprite(Spr_Center, 1, CAMERA_W * 0.5, CAMERA_H * 0.5);
-}
+	draw_sprite(Spr_Cowboy, 0, CAMERA_W * 0.5, CAMERA_H * 0.5);
+}*/
 
 //draw health bar
 draw_sprite(Spr_HealthBar_bg, 0, CAMERA_W * .02, CAMERA_H * .02);

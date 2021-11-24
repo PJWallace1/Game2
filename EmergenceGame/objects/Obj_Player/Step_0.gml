@@ -6,9 +6,9 @@ if(!global.paused && keyboard_check_pressed(vk_escape)){
 else if(!global.paused){
 	//Camera Movement
 	//Move pixelsToMove pixels in vertical direction
-	var vsp = (keyboard_check(ord("S")) - keyboard_check(ord("W"))) / TILE_H * pixelsToMove; 
+	vsp = (keyboard_check(ord("S")) - keyboard_check(ord("W"))) / TILE_H * pixelsToMove; 
 	//Move pixelsToMove pixels in horizontal direction
-	var hsp = (keyboard_check(ord("D")) - keyboard_check(ord("A"))) / TILE_W * pixelsToMove;
+	hsp = (keyboard_check(ord("D")) - keyboard_check(ord("A"))) / TILE_W * pixelsToMove;
 
 	//Apply movement to position
 	if(vsp * hsp == 0){ //cardinal directions

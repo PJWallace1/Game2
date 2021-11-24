@@ -55,6 +55,7 @@ switch(menu_depth){
 						break;
 					}
 				case 2: //Create a new game
+					//SlideTransition(TRANS_MODE.GOTO, Room_ChooseHat);
 					GenerateNewSave(Room_Tropical);
 					menu_depth = 2;
 					break;
@@ -70,7 +71,8 @@ switch(menu_depth){
 		break;
 	case 2:
 		//Save file loaded by Obj_Game at room start
-		SlideTransition(TRANS_MODE.GOTO, Room_Game);
+		SlideTransition(TRANS_MODE.GOTO, Room_ChooseHat);
+		//SlideTransition(TRANS_MODE.GOTO, Room_Game);
 		instance_destroy();
 		break;
 }
