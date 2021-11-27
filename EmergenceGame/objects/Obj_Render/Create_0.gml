@@ -10,7 +10,7 @@ animal_i = 0; //animal sprite index iterator
 
 //if (animal == 1){
 animal_d = 1;
-animal_x = room_width - 1200;
-animal_y = room_height - 100;
+animal_x = 500;
+animal_y = TILE_H + 400;
 kill = false;
 //}
