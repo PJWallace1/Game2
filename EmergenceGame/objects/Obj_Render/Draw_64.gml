@@ -57,5 +57,15 @@ draw_sprite(Spr_HealthBar_Border, 0, CAMERA_W * .02, CAMERA_H * .16);
 
 
 //draw animals
-draw_sprite_ext(Spr_Crab_DR, (i/ 1), animal_x, animal_y, animal_d, 1, 0, c_white, 1);
-//draw_sprite_ext(Spr_Crab_DR, (i/1), (animal_x + i), (animal_y + 2i), animal_d, 1, 0, c_white, 1);
+if (kill == false){
+	draw_sprite_ext(Spr_Crab_DR, (animal_i/ 1), animal_x++, animal_y--, animal_d, 1, 0, c_white, 1);
+	animal_i += .25;
+	if (animal_i == 3){
+		animal_i = 0;
+	}
+}
+if (animal_x > ROOM_W || animal_x < 0 || animal_y > ROOM_H || animal_y < 0){
+	kill = true;
+}
+
+	
