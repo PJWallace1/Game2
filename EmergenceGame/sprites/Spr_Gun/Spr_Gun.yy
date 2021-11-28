@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 2,
-  "bbox_right": 31,
-  "bbox_top": 3,
-  "bbox_bottom": 12,
+  "bbox_left": 0,
+  "bbox_right": 0,
+  "bbox_top": 0,
+  "bbox_bottom": 0,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 32,
-  "height": 16,
+  "width": 64,
+  "height": 64,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a15fce28-9ba3-4051-979d-2c2005eb6d11","path":"sprites/Spr_Penguin_DR/Spr_Penguin_DR.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a15fce28-9ba3-4051-979d-2c2005eb6d11","path":"sprites/Spr_Penguin_DR/Spr_Penguin_DR.yy",},"LayerId":{"name":"5f81c67f-2b54-4f22-8fca-e66b995643e7","path":"sprites/Spr_Penguin_DR/Spr_Penguin_DR.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Spr_Penguin_DR","path":"sprites/Spr_Penguin_DR/Spr_Penguin_DR.yy",},"resourceVersion":"1.0","name":"a15fce28-9ba3-4051-979d-2c2005eb6d11","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5f5c9f06-8eb3-46bb-9623-1a9614114a07","path":"sprites/Spr_Gun/Spr_Gun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5f5c9f06-8eb3-46bb-9623-1a9614114a07","path":"sprites/Spr_Gun/Spr_Gun.yy",},"LayerId":{"name":"5922ba80-2877-4774-af2b-b2fbf7678729","path":"sprites/Spr_Gun/Spr_Gun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Spr_Gun","path":"sprites/Spr_Gun/Spr_Gun.yy",},"resourceVersion":"1.0","name":"5f5c9f06-8eb3-46bb-9623-1a9614114a07","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"Spr_Penguin_DR","path":"sprites/Spr_Penguin_DR/Spr_Penguin_DR.yy",},
+    "spriteId": {"name":"Spr_Gun","path":"sprites/Spr_Gun/Spr_Gun.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"36249924-d019-4f43-82e5-6b3fbc53e9e0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a15fce28-9ba3-4051-979d-2c2005eb6d11","path":"sprites/Spr_Penguin_DR/Spr_Penguin_DR.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3b57c61b-6d45-4f6b-8c68-0822b1956435","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5f5c9f06-8eb3-46bb-9623-1a9614114a07","path":"sprites/Spr_Gun/Spr_Gun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Spr_Penguin_DR","path":"sprites/Spr_Penguin_DR/Spr_Penguin_DR.yy",},
+    "parent": {"name":"Spr_Gun","path":"sprites/Spr_Gun/Spr_Gun.yy",},
     "resourceVersion": "1.3",
-    "name": "Spr_Penguin_DR",
+    "name": "Spr_Gun",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5f81c67f-2b54-4f22-8fca-e66b995643e7","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5922ba80-2877-4774-af2b-b2fbf7678729","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Spr_Penguin_DR",
+  "name": "Spr_Gun",
   "tags": [],
   "resourceType": "GMSprite",
 }

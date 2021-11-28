@@ -79,3 +79,6 @@ if (keyboard_check(ord("T"))){
 	GenerateNewSave(Room_Forest);
 	room_restart(); //Triggers load save
 }
+if (keyboard_check(ord("H"))){
+	hunt = true;
+}

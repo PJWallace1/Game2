@@ -7,6 +7,8 @@ global.playerY = 16; //vertical tile
 
 pixelsToMove = 3;
 
+hunt = false;
+
 //Health bar data
 //health count
 h = 50;
