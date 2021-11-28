@@ -39,6 +39,7 @@
     {"id":{"name":"SaveFunctions","path":"scripts/SaveFunctions/SaveFunctions.yy",},"order":5,},
     {"id":{"name":"Spr_HealthBar_Border","path":"sprites/Spr_HealthBar_Border/Spr_HealthBar_Border.yy",},"order":2,},
     {"id":{"name":"Room_ChooseSave","path":"rooms/Room_ChooseSave/Room_ChooseSave.yy",},"order":2,},
+    {"id":{"name":"Spr_Gun","path":"sprites/Spr_Gun/Spr_Gun.yy",},"order":17,},
     {"id":{"name":"Font_Interact","path":"fonts/Font_Interact/Font_Interact.yy",},"order":2,},
     {"id":{"name":"Font_Menu","path":"fonts/Font_Menu/Font_Menu.yy",},"order":0,},
     {"id":{"name":"Room_ChooseHat","path":"rooms/Room_ChooseHat/Room_ChooseHat.yy",},"order":10,},
@@ -134,7 +135,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.5.589",
+    "IDEVersion": "2.3.4.580",
   },
   "resourceVersion": "1.4",
   "name": "EmergenceGame",
