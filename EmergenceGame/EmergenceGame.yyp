@@ -15,7 +15,6 @@
     {"id":{"name":"Spr_Deer_DR","path":"sprites/Spr_Deer_DR/Spr_Deer_DR.yy",},"order":3,},
     {"id":{"name":"Tile_BackgroundTiles","path":"tilesets/Tile_BackgroundTiles/Tile_BackgroundTiles.yy",},"order":4,},
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},"order":0,},
-    {"id":{"name":"Obj_Animals","path":"objects/Obj_Animals/Obj_Animals.yy",},"order":3,},
     {"id":{"name":"Spr_Penguin_DR","path":"sprites/Spr_Penguin_DR/Spr_Penguin_DR.yy",},"order":11,},
     {"id":{"name":"Obj_Game","path":"objects/Obj_Game/Obj_Game.yy",},"order":1,},
     {"id":{"name":"Spr_InteractableTiles","path":"sprites/Spr_InteractableTiles/Spr_InteractableTiles.yy",},"order":2,},
