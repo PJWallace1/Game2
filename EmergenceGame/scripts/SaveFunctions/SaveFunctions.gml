@@ -147,6 +147,9 @@ function PreserveFishingData(){
 /// @function CreateMap(roomID)
 /// @ param {real}	   roomID
 function CreateMap(roomID){
+	var numFishingSpots = 0; //counts the number of fishing spots
+	var maxNumFish;			 //the maximum number of fish within a spot
+	var spawnChartID;		 //the id of the spawnchart used to control fish spawning weights
 	layer_set_target_room(roomID);//Go to specifed map
 	global.playerX = 30;
 	global.playerY = 16;
@@ -167,3 +170,44 @@ function CreateMap(roomID){
 	}
 	layer_reset_target_room();
 }
+
+	//Create fishing data
+	var tileMapID = layer_tilemap_get_id("Interactable_Grid");
+	for(var y_ = 0; y_ < MAP_H; y_++){
+		for(var x_ = 0; x_ < MAP_W; x_++){
+			if(tile_get_index(tilemap_get(tileMapID, x_, y_)) == 4){ //4 is index of fishing interactable sprite
+				numFishingSpots++; //count the number of fishing spots
+			}
+		}
+	}
+	/*
+	for(var y_ = 0; y_ < MAP_H; y_++){
+		for(var x_ = 0; x_ < MAP_W; x_++){
+			if(tile_get_index(tilemap_get(tileMapID, x_, y_)) == 4){ //4 is index of fishing interactable sprite
+				maxNumFish = irandom(3) + 3; //3 to 6
+				spawnChartID = ChooseWeightedRandomFishingChartID();
+				file_text_write_real(file, x_); //X position within grid
+				file_text_write_string(file, " ");
+				file_text_write_real(file, y_); //Y position within grid
+				file_text_write_string(file, " ");
+				file_text_write_real(file, maxNumFish); //Max Number of fish 
+				file_text_write_string(file, " ");
+				file_text_write_real(file, maxNumFish); //Current Number of fish (starts out at max)
+				file_text_write_string(file, " ");
+				file_text_write_real(file, spawnChartID); //The ID of the spawn chart being used
+				file_text_writeln(file);
+				//Generate fish data
+				for(var f = 0; f < maxNumFish; f++){ //f for fish
+					file_text_write_real(file, irandom(CAMERA_W)); //X position of fish
+					file_text_write_string(file, " ");
+					file_text_write_real(file, irandom(CAMERA_H)); //Y position of fish
+					file_text_write_string(file, " ");
+					file_text_write_real(file, ChooseWeightedRandomFishSize(spawnChartID)); //fish size
+					file_text_write_string(file, " ");
+					file_text_write_real(file, irandom(364)); //direction of fish
+					file_text_writeln(file);
+				}
+			}
+		}
+	}
+	*/
