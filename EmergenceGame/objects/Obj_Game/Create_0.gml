@@ -4,6 +4,7 @@
 global.chosen_save = "invalid";
 global.playerX = 30;
 global.playerY = 16;
+global.hat = 0; //the hat which the player chooses
 
 //The player object instance
 player = instance_create_layer(0, 0, "Instances", Obj_Player);

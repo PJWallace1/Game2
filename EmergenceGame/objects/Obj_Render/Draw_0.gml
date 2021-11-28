@@ -15,8 +15,9 @@ for(var r = gridsToDraw - 1; r >= 0; r--){ //Draw layers from back to front
 			screenX = TileToScreenX(tX, tY);
 			screenY = TileToScreenY(tX, tY);	
 			
-			//if(curGrid == global.Interactable_Grid && 
-			if(tileIndex != 0){ //draw tile on screen if it exists
+			if(curGrid == global.Interactable_Grid && tX == floor(global.playerX) && tY == floor(global.playerY)){
+				draw_sprite(global.hat, 0, camera_get_view_x(view_camera[0]) + CAMERA_W/2, camera_get_view_y(view_camera[0]) + CAMERA_H/2);
+			}else if(tileIndex != 0){ //draw tile on screen if it exists
 				draw_sprite(gridSprites[r], tileIndex - 1, screenX, screenY);
 			}
 		}

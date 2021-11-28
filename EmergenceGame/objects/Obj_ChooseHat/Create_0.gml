@@ -26,8 +26,6 @@ menu_cursor = 2;
 
 gui_margin = 32;
 
-global.hat = 2;
-
 
 menu_committed = -1;
 menu_control = true;

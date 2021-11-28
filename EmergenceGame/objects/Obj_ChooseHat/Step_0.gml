@@ -24,13 +24,13 @@ if(menu_control){
 if(menu_committed != -1){
 	switch(menu_committed){
 		case 2: 
-			global.hat = 2;
+			global.hat = Spr_Cowboy;
 			break;
 		case 1:
-			global.hat = 1;
+			global.hat = Spr_Beanie;
 			break;
 		case 0: 
-			global.hat = 0;
+			global.hat = Spr_Baseball;
 			break;
 			
 		//GenerateNewSave(Room_Tropical);

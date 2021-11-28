@@ -14,17 +14,6 @@ if (Obj_Player.hsp < 0){
 		i += .25;
 	}
 
-//determine hat and draw player
-if (global.hat == 2){
-	draw_sprite_ext(Spr_Cowboy, (i/ 1), CAMERA_W * 0.5, CAMERA_H * 0.5, d, 1, 0, c_white, 1);
-}
-else if (global.hat == 1){
-	draw_sprite_ext(Spr_Beanie, (i/ 1), CAMERA_W * 0.5, CAMERA_H * 0.5, d, 1, 0, c_white, 1);
-}
-else if (global.hat == 0){
-	draw_sprite_ext(Spr_Baseball, (i/ 1), CAMERA_W * 0.5, CAMERA_H * 0.5, d, 1, 0, c_white, 1);
-}
-
 
 if (i == 3){
 	i = 0;
