@@ -72,11 +72,11 @@ else if(!global.paused){
 }
 //Temporary Room Change Accesability
 if (keyboard_check(ord("I"))){
-	GenerateNewSave(Room_Arctic);
+	CreateMap(Room_Arctic);
 	room_restart(); //Triggers load save
 }
 if (keyboard_check(ord("T"))){
-	GenerateNewSave(Room_Forest);
+	CreateMap(Room_Forest);
 	room_restart(); //Triggers load save
 }
 if (keyboard_check(ord("H"))){

@@ -44,6 +44,7 @@
     {"id":{"name":"Room_ChooseHat","path":"rooms/Room_ChooseHat/Room_ChooseHat.yy",},"order":10,},
     {"id":{"name":"Obj_ChooseSave","path":"objects/Obj_ChooseSave/Obj_ChooseSave.yy",},"order":0,},
     {"id":{"name":"Spr_BaitMenuIcon","path":"sprites/Spr_BaitMenuIcon/Spr_BaitMenuIcon.yy",},"order":4,},
+    {"id":{"name":"Obj_FishingData","path":"objects/Obj_FishingData/Obj_FishingData.yy",},"order":4,},
     {"id":{"name":"Spr_GroundTiles","path":"sprites/Spr_GroundTiles/Spr_GroundTiles.yy",},"order":0,},
     {"id":{"name":"Spr_ForegroundTiles","path":"sprites/Spr_ForegroundTiles/Spr_ForegroundTiles.yy",},"order":6,},
     {"id":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},"order":0,},
@@ -134,7 +135,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.4.580",
+    "IDEVersion": "2.3.5.589",
   },
   "resourceVersion": "1.4",
   "name": "EmergenceGame",

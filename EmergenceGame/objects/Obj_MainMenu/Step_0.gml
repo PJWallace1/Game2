@@ -23,7 +23,7 @@ if(menu_control){
 if(menu_committed != -1){
 	switch(menu_committed){
 		case 2: 
-			SlideTransition(TRANS_MODE.GOTO, Room_ChooseSave);
+			SlideTransition(TRANS_MODE.GOTO, Room_ChooseHat);
 		break;
 		case 1:
 			SlideTransition(TRANS_MODE.GOTO, Room_Credits);

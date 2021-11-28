@@ -18,6 +18,7 @@ if(menu_control){
 	if(keyboard_check_pressed(vk_enter)){
 		menu_committed = menu_cursor;
 		menu_control = false;
+		CreateMap(Room_Tropical);
 		SlideTransition(TRANS_MODE.GOTO, Room_Game);
 	}
 }
@@ -32,7 +33,5 @@ if(menu_committed != -1){
 		case 0: 
 			global.hat = Spr_Baseball;
 			break;
-			
-		//GenerateNewSave(Room_Tropical);
 	}
 }

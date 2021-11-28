@@ -24,7 +24,7 @@ if(menu_control){
 if(menu_committed != -1){
 	switch(menu_committed){
 		case 2: 
-			SaveGame(); //Located in General Functions
+			//SaveGame(); //Located in General Functions
 			menu_control = true;
 			menu_committed = -1;
 			break;

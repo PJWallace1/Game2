@@ -143,3 +143,27 @@ function PreserveFishingData(){
 	show_debug_message(data);
 	return data;
 }
+
+/// @function CreateMap(roomID)
+/// @ param {real}	   roomID
+function CreateMap(roomID){
+	layer_set_target_room(roomID);//Go to specifed map
+	global.playerX = 30;
+	global.playerY = 16;
+	//Write all grid maps into save file
+	layer_set_visible("Ground_Grid", false); //Hides bitmap
+	layer_set_visible("Background_Grid", false); //Hides bitmap
+	layer_set_visible("Interactable_Grid", false); //Hides bitmap
+	layer_set_visible("Foreground_Grid", false); //Hides bitmap
+	layer_set_visible("Collision_Grid", false); //Hides bitmap
+	layer_set_visible("Temperature_Grid", false); //Hides bitmap
+	//Write to save file
+	for(var i = 0; i < array_length(global.mapNames); i++){
+		for(var y_ = 0; y_ < MAP_H; y_++){
+			for(var x_ = 0; x_ < MAP_W; x_++){
+				global.gridNames[i][# x_, y_] = tile_get_index(tilemap_get(layer_tilemap_get_id(global.mapNames[i]), x_, y_));
+			}
+		}
+	}
+	layer_reset_target_room();
+}
