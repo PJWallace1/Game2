@@ -48,6 +48,7 @@
     {"id":{"name":"Obj_FishingData","path":"objects/Obj_FishingData/Obj_FishingData.yy",},"order":4,},
     {"id":{"name":"Spr_GroundTiles","path":"sprites/Spr_GroundTiles/Spr_GroundTiles.yy",},"order":0,},
     {"id":{"name":"Spr_ForegroundTiles","path":"sprites/Spr_ForegroundTiles/Spr_ForegroundTiles.yy",},"order":6,},
+    {"id":{"name":"Obj_Animal","path":"objects/Obj_Animal/Obj_Animal.yy",},"order":18,},
     {"id":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},"order":0,},
     {"id":{"name":"Spr_Redshirt","path":"sprites/Spr_Redshirt/Spr_Redshirt.yy",},"order":3,},
     {"id":{"name":"Spr_HealthBar","path":"sprites/Spr_HealthBar/Spr_HealthBar.yy",},"order":0,},
