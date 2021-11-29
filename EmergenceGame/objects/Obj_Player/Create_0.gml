@@ -1,5 +1,7 @@
 /// @description Setup player
 
+global.room_id = 0; //tropical
+
 //Coordinates of player within map
 //The map tile in which the player resides
 global.playerX = 30; //horizontal tile 
