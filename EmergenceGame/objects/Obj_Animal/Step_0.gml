@@ -20,14 +20,13 @@ if (kill == false){
 	animal_x = x;
 	
 	
-	screenX = TileToScreenX(x, MAP_H);
-	screenY = TileToScreenY(animal_x, animal_y);
+	animal_x = ScreenToTileX(x, y);
+	animal_y = ScreenToTileY(x, y);
 	
-	/*screenX = ScreenToTileX(animal_x, animal_y);
-	screenY = ScreenToTileY(animal_x, animal_y);*/
-	
-	if (x > screenX){
-		x = 300;
+	if (animal_x > MAP_W || animal_y > MAP_H || animal_x < 0 || animal_y < 0){
+		temp_y = irandom_range(0, MAP_H);
+		x = TileToScreenX(0, temp_y);
+		y = TileToScreenY(0, temp_y);
 	}
 	/*if (screenY > MAP_H){
 		x = 500;
