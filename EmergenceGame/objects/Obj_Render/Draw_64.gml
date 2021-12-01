@@ -19,15 +19,16 @@ if (i == 3){
 	i = 0;
 }
 
-//draw player
-
-/*
-if (room == Room_Forest || room == Room_Game){
-	draw_sprite(Spr_Cowboy, 0, CAMERA_W * 0.5, CAMERA_H * 0.5);
+//check maxes
+if (Obj_Player.h > Obj_Player.h_max){
+	Obj_Player.h = Obj_Player.h_max;
 }
-if (room == Room_Arctic || room == Room_Tropical){
-	draw_sprite(Spr_Cowboy, 0, CAMERA_W * 0.5, CAMERA_H * 0.5);
-}*/
+if (Obj_Player.wl > Obj_Player.wl_max){
+	Obj_Player.wl = Obj_Player.wl_max;
+}
+if (Obj_Player.temp > Obj_Player.temp_max){
+	Obj_Player.temp = Obj_Player.temp_max;
+}
 
 //draw health bar
 draw_sprite(Spr_HealthBar_bg, 0, CAMERA_W * .02, CAMERA_H * .02);
