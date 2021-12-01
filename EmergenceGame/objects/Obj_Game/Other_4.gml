@@ -23,7 +23,7 @@ else if(room == Room_ChooseSave){
 */
 //Tropical room
 else if (room == Room_Tropical){
-	instance_create_layer(Obj_Animal.x, Obj_Animal.y, "Instances", Obj_Animal);
+	//instance_create_layer(Obj_Animal.x, Obj_Animal.y, "Instances", Obj_Animal);
 }
 //Fishing
 else if(room == Room_Fishing){

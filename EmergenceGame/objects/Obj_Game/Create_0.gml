@@ -30,3 +30,5 @@ global.gridNames = [global.Foreground_Grid, global.Interactable_Grid, global.Bac
 			        global.Ground_Grid, global.Temperature_Grid, global.Collision_Grid];
 					
 randomize(); //Randomize seed
+
+

@@ -26,4 +26,11 @@ increase = true;
 if (global.room_id == 0){
 	sprite_index = Spr_Crab_DR;
 }
+if (global.room_id == 1){
+	sprite_index = Spr_Deer_DR;
+}
+if (global.room_id == 2){
+	sprite_index = Spr_Polar_DR;
+}
+
 

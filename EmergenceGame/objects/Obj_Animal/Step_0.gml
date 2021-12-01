@@ -8,7 +8,6 @@
 //old animal stuff
 
 if (kill == false){
-	//draw_sprite_ext(Spr_Crab_DR, (animal_i/ 1), animal_x, animal_y, animal_d, 1, 0, c_white, 1);
 	
 	//sprite index
 	animal_i += .25;

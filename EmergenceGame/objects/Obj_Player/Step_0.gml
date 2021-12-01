@@ -72,13 +72,16 @@ else if(!global.paused){
 }
 //Temporary Room Change Accesability
 if (keyboard_check(ord("I"))){
-	global.room_id = 1; //arctic
+	global.room_id = 2; //arctic
 	CreateMap(Room_Arctic);
 	room_restart(); //Triggers load save
 }
 if (keyboard_check(ord("T"))){
-	global.room_id = 2; //forest
+	global.room_id = 1; //forest
 	CreateMap(Room_Forest);
+	instance_create_layer(750, 600, "Animals", Obj_Animal);
+	instance_create_layer(750, 600, "Animals", Obj_Animal);
+	instance_create_layer(750, 600, "Animals", Obj_Animal);
 	room_restart(); //Triggers load save
 }
 if (keyboard_check(ord("H"))){
