@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Variables and Sprite Initialization
 // You can write your code in this editor
 
 GridX = 500;
@@ -7,12 +7,6 @@ GridY = 500;
 move_x = 1;
 move_y = 0;
 
-//x = TileToScreenX(GridX) + move_x;
-//y = TileToScreenX(GridY) + move_y;
-//draw_sprite(Spr_Crab_DR, 0, x, y);
-//animal variables
-
-//old animal 
 
 animal_p = 1//animal path;
 animal_i = 0; //animal sprite index iterator

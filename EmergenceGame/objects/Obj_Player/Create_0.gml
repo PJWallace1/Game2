@@ -42,6 +42,7 @@ progress = 0;
 requiredProgress = 30;
 
 timer = 500;
+og_time = current_time;
 
 
 

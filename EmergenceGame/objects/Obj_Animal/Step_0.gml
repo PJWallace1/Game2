@@ -1,11 +1,8 @@
-/// @description Insert description here
+/// @description Draw/Move Animal
 // You can write your code in this editor
 
 //draw animals
-//draw_sprite_ext(Spr_Crab_DR, (animal_i/ 1), animal_x, animal_y, animal_d, 1, 0, c_white, 1);
 
-
-//old animal stuff
 
 if (kill == false){
 	
@@ -27,9 +24,7 @@ if (kill == false){
 		x = TileToScreenX(0, temp_y);
 		y = TileToScreenY(0, temp_y);
 	}
-	/*if (screenY > MAP_H){
-		x = 500;
-	}*/
+	
 	
 	
 	

@@ -30,3 +30,7 @@ else if(room == Room_Fishing){
 	//Pass in grid cordinates as position
 	instance_create_layer(player.interactX, player.interactY, "Instances", Obj_Fishing);
 }
+
+else if (room  == Room_Scores){
+	instance_create_layer(0, 0, "Instances", Obj_Scores);
+}

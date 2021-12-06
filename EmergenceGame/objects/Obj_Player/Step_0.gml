@@ -69,22 +69,24 @@ else if(!global.paused){
 		Obj_Player.temp--;
 		timer = 500;
 	}
+	if (Obj_Player.h < 0){
+		score = current_time - og_time;
+		str = string(current_month) + "/" + string(current_day) + "/" + string(current_year);
+		highscore_add(str, score);
+		room_goto(Room_Scores);
+		
+	}
 }
 //Temporary Room Change Accesability
-if (keyboard_check(ord("I"))){
+if (keyboard_check(ord("I")) || current_time > 360000){
 	global.room_id = 2; //arctic
 	CreateMap(Room_Arctic);
 	room_restart(); //Triggers load save
 }
-if (keyboard_check(ord("T"))){
+else if (keyboard_check(ord("T")) || (current_time > 180000)){
 	global.room_id = 1; //forest
 	CreateMap(Room_Forest);
-	instance_create_layer(750, 600, "Animals", Obj_Animal);
-	instance_create_layer(750, 600, "Animals", Obj_Animal);
-	instance_create_layer(750, 600, "Animals", Obj_Animal);
 	room_restart(); //Triggers load save
 }
-if (keyboard_check(ord("H"))){
-	hunt = true;
-}
+
 
