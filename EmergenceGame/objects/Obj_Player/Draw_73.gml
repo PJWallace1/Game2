@@ -23,6 +23,6 @@ if(!global.paused){
 		draw_set_valign(fa_middle);
 		draw_set_colour(c_black);
 		draw_text(screenX, screenY, "E");
-		//draw_set_alpha(1);
+		//draw_set_alpha(1)
 	}
 }

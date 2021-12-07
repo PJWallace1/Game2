@@ -3,11 +3,8 @@
 if(keyboard_check_pressed(vk_escape)){
 	room_goto(Room_Game);
 }else{
-	for(var i = 0; i < curNumFish; i++)
-	{
-		with(fishInSpot[i])
-		{
-
-		}
+	if(mouse_check_button_pressed(mb_left)){
+		bobID.x = mouse_x;
+		bobID.y = mouse_y;
 	}
 }

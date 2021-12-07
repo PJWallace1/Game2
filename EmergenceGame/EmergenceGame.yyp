@@ -76,6 +76,7 @@
     {"id":{"name":"Room_Tropical","path":"rooms/Room_Tropical/Room_Tropical.yy",},"order":1,},
     {"id":{"name":"Spr_Center","path":"sprites/Spr_Center/Spr_Center.yy",},"order":10,},
     {"id":{"name":"Save File Format","path":"notes/Save File Format/Save File Format.yy",},"order":3,},
+    {"id":{"name":"Spr_Bob","path":"sprites/Spr_Bob/Spr_Bob.yy",},"order":19,},
     {"id":{"name":"Spr_CollisionTiles","path":"sprites/Spr_CollisionTiles/Spr_CollisionTiles.yy",},"order":1,},
     {"id":{"name":"Obj_MainMenu","path":"objects/Obj_MainMenu/Obj_MainMenu.yy",},"order":1,},
     {"id":{"name":"Room_Forest","path":"rooms/Room_Forest/Room_Forest.yy",},"order":2,},
@@ -140,7 +141,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.4.580",
+    "IDEVersion": "2.3.5.589",
   },
   "resourceVersion": "1.4",
   "name": "EmergenceGame",

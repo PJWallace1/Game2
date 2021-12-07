@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "Spr_Bob",
+    "path": "sprites/Spr_Bob/Spr_Bob.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

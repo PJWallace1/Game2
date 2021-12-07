@@ -24,8 +24,6 @@ if (kill == false){
 		x = TileToScreenX(0, temp_y);
 		y = TileToScreenY(0, temp_y);
 	}
-	
-	
-	
-	
+} else {
+	draw_line_width(global.playerX, global.playerY, x, y, 4);
 }

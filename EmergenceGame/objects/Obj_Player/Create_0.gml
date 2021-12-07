@@ -41,7 +41,7 @@ progress = 0;
 //The required progress to start the interaction
 requiredProgress = 30;
 
-timer = 500;
+timer = 50;
 og_time = current_time;
 
 
