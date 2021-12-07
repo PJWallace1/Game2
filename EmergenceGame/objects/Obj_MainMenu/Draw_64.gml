@@ -4,7 +4,7 @@
 draw_sprite_ext(Spr_Crab_DR, 0, 250, 100, 5, 5, 0, c_white, 1);
 draw_sprite_ext(Spr_Deer_DR, 0, 50, 400, 5, 5, 0, c_white, 1);
 draw_sprite_ext(Spr_Polar_DR, 0, 575, 100, 5, 5, 0, c_white, 1);
-draw_sprite_ext(Spr_Fish, 0, 750, 400, 5, 5, 0, c_white, 1);
+draw_sprite_ext(Spr_Cowboy, 0, 750, 700, 5, 5, 0, c_white, 1);
 //draw_sprite_ext(Spr_Fish, 0, 250, 150, 3, 3, 0, c_white, 1);
 
 
@@ -18,7 +18,7 @@ for(var i = 0; i < menu_items; i++){
 		txt = string_insert("> ", txt, 0);
 		var col = c_white;
 	} else {
-		var col = c_gray;
+		var col = c_dkgray;
 	}
 	var xx = menu_x;
 	var yy = menu_y - (menu_itemheight * menu_scale * i * 1.5 );

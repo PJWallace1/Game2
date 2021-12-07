@@ -36,6 +36,7 @@
     {"id":{"name":"Spr_Bear","path":"sprites/Spr_Bear/Spr_Bear.yy",},"order":1,},
     {"id":{"name":"FishingTableFunctions","path":"scripts/FishingTableFunctions/FishingTableFunctions.yy",},"order":4,},
     {"id":{"name":"Spr_Bear_DR","path":"sprites/Spr_Bear_DR/Spr_Bear_DR.yy",},"order":4,},
+    {"id":{"name":"Sprite_Menu","path":"sprites/Sprite_Menu/Sprite_Menu.yy",},"order":20,},
     {"id":{"name":"Spr_WaterLevel","path":"sprites/Spr_WaterLevel/Spr_WaterLevel.yy",},"order":4,},
     {"id":{"name":"SaveFunctions","path":"scripts/SaveFunctions/SaveFunctions.yy",},"order":5,},
     {"id":{"name":"Spr_HealthBar_Border","path":"sprites/Spr_HealthBar_Border/Spr_HealthBar_Border.yy",},"order":2,},
