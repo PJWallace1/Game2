@@ -3,6 +3,10 @@
 //Item ease in
 //menu_x += (menu_x_target - menu_x) / menu_speed;
 
+
+
+
+
 //Keyboard Controls
 if(menu_control){
 	if(keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))){

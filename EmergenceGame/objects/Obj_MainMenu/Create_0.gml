@@ -18,3 +18,7 @@ menu[0] = "Quit";
 
 menu_items = array_length_1d(menu);
 menu_cursor = 2;
+
+main_i = 0;
+
+animal_x = 0;
