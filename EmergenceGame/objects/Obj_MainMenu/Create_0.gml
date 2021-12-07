@@ -13,7 +13,7 @@ menu_committed = -1;
 menu_control = true;
 
 menu[2] = "Play";
-menu[1] = "Credits";
+menu[1] = "How To Play";
 menu[0] = "Quit";
 
 menu_items = array_length_1d(menu);

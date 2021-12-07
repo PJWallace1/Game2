@@ -1,9 +1,7 @@
 /// @description Move player
 //Pause the game if the player presses escape
-if(!global.paused && keyboard_check_pressed(vk_escape)){
-	instance_create_layer(0, 0, "Instances", Obj_PauseMenu);
-}
-else if(!global.paused){
+
+if(!global.paused){
 //Camera Movement
 	//Move pixelsToMove pixels in vertical direction
 	vsp = (keyboard_check(ord("S")) - keyboard_check(ord("W"))) / TILE_H * pixelsToMove; 
@@ -63,31 +61,37 @@ else if(!global.paused){
 //update bars
 	timer--;
 	if (timer < 0){
-		Obj_Player.h--;
+		Obj_Player.h-=2
 		Obj_Player.wl--;
 		Obj_Player.temp--;
 		timer = 50;
 	}
-	if (Obj_Player.h < 0){
-		score = current_time - og_time;
-		str = string(current_month) + "/" + string(current_day) + "/" + string(current_year);
-		highscore_add(str, score);
+	if (Obj_Player.h <= 1){
+		show_debug_message("die");
 		room_goto(Room_Scores);
-		
+	}
+} else if(room == Room_Fishing){
+	timer--;
+	if (timer < 0){
+		Obj_Player.h-=2
+		Obj_Player.wl--;
+		Obj_Player.temp--;
+		timer = 50;
 	}
 }
 //Temporary Room Change Accesability
-if(current_time > 540000 || keyboard_check(ord("J"))){
+if(current_time > 180000 || keyboard_check(ord("J"))){
 	room_goto(Room_Scores);
 	global.pause = true;
 	
 }
-if (keyboard_check(ord("K")) || current_time > 360000){
+if (keyboard_check(ord("K")) || current_time > 90000){
+	show_debug_message("Trand");
 	global.room_id = 2; //arctic
 	CreateMap(Room_Arctic);
 	room_restart(); //Triggers load save
 }
-else if (keyboard_check(ord("L")) || (current_time > 180000)){
+else if (keyboard_check(ord("L")) || (current_time > 45000)){
 	global.room_id = 1; //forest
 	CreateMap(Room_Forest);
 	room_restart(); //Triggers load save

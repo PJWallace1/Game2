@@ -3,6 +3,7 @@
 
 if (mouse_check_button_pressed(mb_left) && position_meeting(mouse_x, mouse_y, self)){
 	Obj_Player.h += 5;
+	global.score+=5;
 	y = irandom_range(0, MAP_H);
 	x = irandom_range(0, MAP_W);
 	animal_p = 1//animal path;

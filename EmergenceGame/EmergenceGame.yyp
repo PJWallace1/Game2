@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"Font_Rules","path":"fonts/Font_Rules/Font_Rules.yy",},"order":3,},
     {"id":{"name":"Obj_Camera","path":"objects/Obj_Camera/Obj_Camera.yy",},"order":1,},
     {"id":{"name":"Obj_Bob","path":"objects/Obj_Bob/Obj_Bob.yy",},"order":2,},
     {"id":{"name":"Tile_GroundTiles","path":"tilesets/Tile_GroundTiles/Tile_GroundTiles.yy",},"order":3,},
@@ -24,11 +25,12 @@
     {"id":{"name":"Room_Menu","path":"rooms/Room_Menu/Room_Menu.yy",},"order":1,},
     {"id":{"name":"Spr_PolarBear","path":"sprites/Spr_PolarBear/Spr_PolarBear.yy",},"order":2,},
     {"id":{"name":"Spr_HealthBar_bg","path":"sprites/Spr_HealthBar_bg/Spr_HealthBar_bg.yy",},"order":1,},
-    {"id":{"name":"Obj_Scores","path":"objects/Obj_Scores/Obj_Scores.yy",},"order":19,},
+    {"id":{"name":"Obj_Scores","path":"objects/Obj_Scores/Obj_Scores.yy",},"order":5,},
     {"id":{"name":"Room_Arctic","path":"rooms/Room_Arctic/Room_Arctic.yy",},"order":0,},
     {"id":{"name":"Spr_Background_Tiles","path":"sprites/Spr_Background_Tiles/Spr_Background_Tiles.yy",},"order":7,},
     {"id":{"name":"Font_Game","path":"fonts/Font_Game/Font_Game.yy",},"order":1,},
     {"id":{"name":"Spr_ForegroundIso","path":"sprites/Spr_ForegroundIso/Spr_ForegroundIso.yy",},"order":3,},
+    {"id":{"name":"Obj_Credits","path":"objects/Obj_Credits/Obj_Credits.yy",},"order":4,},
     {"id":{"name":"Spr_Bow","path":"sprites/Spr_Bow/Spr_Bow.yy",},"order":18,},
     {"id":{"name":"Spr_GroundIso","path":"sprites/Spr_GroundIso/Spr_GroundIso.yy",},"order":1,},
     {"id":{"name":"Spr_Turtle","path":"sprites/Spr_Turtle/Spr_Turtle.yy",},"order":6,},

@@ -34,3 +34,6 @@ else if(room == Room_Fishing){
 else if (room  == Room_Scores){
 	instance_create_layer(0, 0, "Instances", Obj_Scores);
 }
+else if(room == Room_Credits){
+	instance_create_layer(0, 0, "Instances", Obj_Credits);
+}
