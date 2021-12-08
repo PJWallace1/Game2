@@ -67,7 +67,7 @@ if(!global.paused){
 		timer = 50;
 	}
 	if (Obj_Player.h <= 1){
-		show_debug_message("die");
+		global.paused = true;
 		room_goto(Room_Scores);
 	}
 } else if(room == Room_Fishing){
@@ -80,18 +80,17 @@ if(!global.paused){
 	}
 }
 //Temporary Room Change Accesability
-if(current_time > 180000 || keyboard_check(ord("J"))){
+if(keyboard_check(ord("J"))){
 	room_goto(Room_Scores);
-	global.pause = true;
+	global.paused = true;
 	
 }
-if (keyboard_check(ord("K")) || current_time > 90000){
-	show_debug_message("Trand");
+if (keyboard_check(ord("K"))){
 	global.room_id = 2; //arctic
 	CreateMap(Room_Arctic);
 	room_restart(); //Triggers load save
 }
-else if (keyboard_check(ord("L")) || (current_time > 45000)){
+else if (keyboard_check(ord("L"))){
 	global.room_id = 1; //forest
 	CreateMap(Room_Forest);
 	room_restart(); //Triggers load save

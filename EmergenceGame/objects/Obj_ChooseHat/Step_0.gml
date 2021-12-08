@@ -18,6 +18,7 @@ if(menu_control){
 	if(keyboard_check_pressed(vk_enter)){
 		menu_committed = menu_cursor;
 		menu_control = false;
+		Obj_Game.alarm[0] = global.gameTime;
 		CreateMap(Room_Tropical);
 		SlideTransition(TRANS_MODE.GOTO, Room_Game);
 	}

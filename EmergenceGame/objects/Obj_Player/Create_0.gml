@@ -27,9 +27,6 @@ wl_max = wl;
 temp = 50;
 temp_max = temp;
 
-var vsp = 0;
-var hsp = 0;
-
 //Interact Variables
 //Whether an interactable is nearby
 interact = false
@@ -42,7 +39,6 @@ progress = 0;
 requiredProgress = 30;
 
 timer = 50;
-og_time = current_time;
 
 
 
